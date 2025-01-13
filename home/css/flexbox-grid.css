@@ -1,104 +1,91 @@
+
 body {
-            margin: 0;
-            font-family: 'Arial', sans-serif;
-            background-color: #f3f4f6;
-            color: #333;
-        }
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f4f6;
+    color: #333;
+    line-height: 1.6;
+}
 
-        .container {
-            display: grid;
-            grid-template-rows: auto 1fr auto;
-            height: 100vh;
-        }
-        
-        header, footer {
-            background-color: #3b5998; /* Vibrant Blue */
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        
-        main {
-            display: flex;
-            flex-direction: row;
-        }
-        
-        .main-content {
-            flex: 2;
-            background-color: #ffffff; /* White for clean content */
-            padding: 20px;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-            border-right: 1px solid #ddd;
-        }
+.container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+}
 
-        .main-content > div {
-            background-color: #f9fafb; /* Light Gray */
-            width: calc(33% - 20px);
-            min-height: 150px;
-            padding: 15px;
-            text-align: center;
-            font-size: 18px;
-            border: 1px solid #e5e7eb;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
+header, footer {
+    background-color: #3b5998;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
-        .main-content > div:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
+main {
+    display: flex;
+    flex-direction: row;
+}
 
-        .main-content img {
-            max-width: 100%;
-            height: auto;
-            margin: 10px 0;
-            border-radius: 50%;
-            border: 3px solid #3b5998;
-        }
+.main-content {
+    flex: 2;
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-right: 1px solid #ddd;
+    overflow-y: auto;
+}
 
-        .sidebar {
-            flex: 1;
-            background-color: #edf2f7; /* Soft Blue */
-            padding: 20px;
-            box-shadow: -2px 0 4px rgba(0, 0, 0, 0.1);
-        }
+.main-content > div {
+    background-color: #f9fafb;
+    width: calc(30% - 15px);
+    min-height: 150px;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
 
-        table {
-            width: 100%;
-            margin: 10px 0;
-            border-collapse: collapse;
-        }
+.main-content > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
 
-        table img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
+.main-content img {
+    max-width: 80%;
+    height: auto;
+    margin: 10px 0;
+    border-radius: 50%;
+    border: 3px solid #3b5998;
+}
 
-        table th {
-            padding: 5px;
-        }
+.sidebar {
+    flex: 1;
+    background-color: #edf2f7;
+    padding: 20px;
+    box-shadow: -2px 0 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
 
-        li {
-            text-align: left;
-            margin: 5px 0;
-        }
+table {
+    width: 100%;
+    margin-top: 15px;
+    border-collapse: collapse;
+}
 
-        h1, h2, h3 {
-            margin: 10px 0;
-            color: #3b5998; /* Match header/footer color */
-        }
+table img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
-        p {
-            margin: 5px 0;
-        }
-
-        footer {
-            font-size: 14px;
-            border-top: 1px solid #ddd;
-        }
+footer {
+    font-size: 14px;
+    border-top: 1px solid #ddd;
+    text-align: center;
+}
