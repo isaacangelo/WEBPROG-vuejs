@@ -9,6 +9,8 @@
   <food-item2/> <br>
   <food-item/> <br>
   <personal-profile/> <br>
+  <comment-form/> <br>
+  <comment/> <br>
 </template>
 
 <script setup>
