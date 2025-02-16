@@ -11,6 +11,7 @@
   <personal-profile/> <br>
   <comment-form/> <br>
   <comment/> <br>
+  <rest-api/> <br>
 </template>
 
 <script setup>
